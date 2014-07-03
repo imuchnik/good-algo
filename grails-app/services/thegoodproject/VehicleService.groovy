@@ -8,19 +8,19 @@ class VehicleService {
 
     def init(){
 
-        def csvc = new File( 'grails-app/conf/vsn_data.csv' ).getText()
-        def slurper = new CsvSlurper()
-        parsedFile = slurper.parseText(csvc,true)
-        println parsedFile
+
     }
 
     def initialize() {
-        File vsnData = new File("grails-app/conf/vsn_data_noheader.csv")
         wildCardTrie = new WildCardTrie();
         cars = new HashMap();
-        vsnData.splitEachLine(",") { fields ->
-            wildCardTrie.insert(fields[0])
-            cars[fields[0]] = fields;
+        def csvc = new File( 'grails-app/conf/vsn_data.csv' ).getText()
+        def slurper = new CsvSlurper()
+        parsedFile = slurper.parseText(csvc,true)
+        //Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+        parsedFile.each { fields ->
+            wildCardTrie.insert(fields['Serial Number Pattern'])
+            cars[fields['Serial Number Pattern']] = fields;
         }
     }
 
@@ -33,10 +33,8 @@ class VehicleService {
     }
 
     def findCars(vsn) {
-        def vehicleInfo=cars[findInTrie(vsn)]
+      cars[findInTrie(vsn)]
 
-    vehicle = new Vehicle(id: vehicleInfo[0],make: vehicleInfo[1], model:vehicleInfo[2] ,trim:vehicleInfo[3] ,trimName:vehicleInfo[4] )
-        vehicle
     }
 
 }

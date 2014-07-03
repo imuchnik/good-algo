@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites />
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Irinas-MacBook-Pro.local" id="0" name="VehicleServiceTests" package="thegoodproject" tests="2" time="0.232" timestamp="2014-07-03T05:56:12">
+      <properties />
+
+      <testcase classname="thegoodproject.VehicleServiceTests" name="shouldAddAndFindWords" time="0.148" />
+
+      <testcase classname="thegoodproject.VehicleServiceTests" name="shouldFindWordWithWoldCards" time="0.057" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[--Output from shouldAddAndFindWords--
+--Output from shouldFindWordWithWoldCards--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

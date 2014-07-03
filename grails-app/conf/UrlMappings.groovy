@@ -2,7 +2,7 @@ class UrlMappings {
 
 	static mappings = {
 
-        "/search/$id"(controller : "VIN"){ action = [GET:"search"]}
+        "/search/$id"(controller : "vehicle"){ action = [GET:"search"]}
 
  		"/$controller/$action?/$id?"{
 			constraints {
@@ -10,7 +10,7 @@ class UrlMappings {
 			}
 		}
         "/" {
-            controller = "VIN"
+            controller = "vehicle"
             action = "index"
         }
 
