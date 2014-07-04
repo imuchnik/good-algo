@@ -16,10 +16,9 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
         <g:javascript src="vendor/angular.js" />
-        <g:javascript src="vendor/bower_components/platform/platform.js" />
+      
         <g:javascript src="app.js" />
 
-        <g:link rel="import" src="vendor/bower_components/core-icon-button/core-icon-button.html"/>
 
 
         <r:layoutResources />

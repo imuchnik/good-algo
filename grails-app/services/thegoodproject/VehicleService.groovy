@@ -1,7 +1,7 @@
 package thegoodproject
 
 class VehicleService {
-   Vehicle vehicle
+
     HashMap cars
     WildCardTrie wildCardTrie
     def parsedFile

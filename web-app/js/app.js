@@ -4,6 +4,7 @@ app.controller('vsnSearchController', function($scope, $http){
 
     $scope.validateAndSubmit =function(){
         $scope.validationResult=null;
+        $scope.notFoundMessage=null;
         $scope.cars=[];
 
         var vsnValidation = /^[a-zA-Z]{6}[0-9]{6}$/;
@@ -19,7 +20,14 @@ app.controller('vsnSearchController', function($scope, $http){
     function carLookup(){
         $http({method:"GET", url:"/TheGoodProject/search/"+$scope.searchString})
             .success(function(data){
-                $scope.cars=data;
+
+                if (data!=='null') {
+                    $scope.cars = data;
+                }
+                else{
+                    $scope.notFoundMessage="No Results";
+                }
+
             });
     }
 });

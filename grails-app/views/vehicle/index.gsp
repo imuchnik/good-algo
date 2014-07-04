@@ -11,6 +11,7 @@
 <button data-ng-click="validateAndSubmit()">Search</button>
 
 <div data-ng-class="{errors: validationResult, none: !validationResult}" data-ng-bind="validationResult"></div>
+<div data-ng-class="{errors: notFoundMessage, none: !notFoundMessage}" data-ng-bind="notFoundMessage"></div>
 <div data-ng-show="cars">
     <div><h4> Results </h4></div>
 
