@@ -32,8 +32,7 @@ Write this website using using the language/framework of your choice, and feel f
 You will be evaluated on all aspects of your solution, but we will focus on your ability to design and write code, and to make appropriate library choices for a production environment. 
 
 Finally, while the VSN input set is relatively small, in a real-world environment the list will be much larger. If your solution would not adequately perform with tens or hundreds of thousands of VSN search patterns, please describe how you would build a solution to handle that in a readme file. The readme should also include any special installation requirements, known issues, areas for improvement, ideas for version 2, etc.
-
-If you have any questions about the implementation, please feel free to ask craig@goodinc.com. Have fun!
+ Have fun!
 
 
 [1] VSN is a made-up term, but is similar to how Vehicle Identification Numbers (VIN) work.
