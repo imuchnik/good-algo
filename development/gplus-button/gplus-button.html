@@ -1,0 +1,177 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Web Component wrapper for [Google's +1 button](https://developers.google.com/+/web/+1button/) using Polymer.
+
+##### Example
+
+    <gplus-button></gplus-button>
+
+@element gplus-button
+@status alpha
+@url http://zenorocha.github.io/gplus-button/
+-->
+<polymer-element name="gplus-button" attributes="annotation href size pageId lang rel width height type isContainer">
+
+  <script>
+  Polymer("gplus-button", {
+    /**
+     * Sets the annotation to display next to the button.
+     *
+     * Options: `bubble`, `inline`, `none`
+     *
+     * Default: `bubble`
+     *
+     * @attribute annotation
+     * @type string
+     * @default 'bubble'
+     */
+    annotation: "bubble",
+
+    /**
+     * The URL to +1
+     *
+     * Default: http://customelements.io
+     *
+     * @attribute href
+     * @type string
+     * @default 'http://customelements.io'
+     */
+    href: "http://customelements.io",
+
+    /**
+     * Sets the +1 button size to render
+     *
+     * Options: `small`, `medium`, `standard`, `tall`
+     *
+     * Default: `standard`
+     *
+     * @attribute size
+     * @type string
+     * @default 'standard'
+     */
+    size: "standard",
+
+    /**
+     * URL to the Google+ page or user profile. For example:
+     * https://plus.google.com/110967630299632321627 or
+     * https://plus.google.com/+LarryPage
+     *
+     * Default: `109325404047497404656`
+     *
+     * @attribute pageId
+     * @type string
+     * @default '109325404047497404656'
+     */
+    pageId: "109325404047497404656",
+
+    /**
+     * Language of the component
+     *
+     * Options: `pt-BR`, `en-US`, `es`, [more languages](https://developers.google.com/+/web/+1button/#available-languages)
+     *
+     * Default: `en-US`
+     *
+     * @attribute lang
+     * @type string
+     * @default 'en-US'
+     */
+    lang: "en-US",
+
+    /**
+     * Describes the relationship of the entity defined at the href location to the page the badge is embedded.
+     *
+     * Options: `author`, `publisher`
+     *
+     * Default: ''
+     *
+     * @attribute rel
+     * @type string
+     * @default ''
+     */
+    rel: "",
+
+    /**
+     * The width of the button
+     *
+     * Default: `300`
+     *
+     * @attribute width
+     * @type number
+     * @default '300'
+     */
+    width: 300,
+
+    /**
+     * The height of the button
+     *
+     * Options: `15`, `20`, `24`
+     *
+     * Default: `20`
+     *
+     * @attribute height
+     * @type number
+     * @default '20'
+     */
+    height: 20,
+
+    /**
+     * The type of button
+     *
+     * Options: `g-plusone`, `g-follow`
+     *
+     * Default: `g-plusone`
+     *
+     * @attribute type
+     * @type string
+     * @default 'g-plusone'
+     */
+    type: "g-plusone",
+
+    /**
+     * If set to `true`, the button will be created inside of the gplus-button element. Otherwise it will be appended to the body.
+     *
+     * Default: true
+     *
+     * @attribute type
+     * @type boolean
+     * @default true
+     */
+    isContainer: true,
+
+    ready: function() {
+      var script = document.createElement("script"),
+        div = document.createElement("div"),
+        body = document.body;
+
+      script.setAttribute("type", "text/javascript");
+      script.setAttribute("src", "https://apis.google.com/js/plusone.js");
+      script.setAttribute("async", true);
+      script.innerHTML = "{lang: '" + this.lang + "'}";
+
+      div.setAttribute("class", this.type);
+
+      if (this.type === "g-follow") {
+        div.setAttribute("data-href", ("http://plus.google.com/" + this.pageId));
+        div.setAttribute("data-annotation", this.annotation);
+        div.setAttribute("data-rel", this.rel);
+        div.setAttribute("data-height", this.height);
+      } else if (this.type === "g-plusone") {
+        div.setAttribute("href", this.href);
+        div.setAttribute("size", this.size);
+        div.setAttribute("width", this.width);
+        div.setAttribute("annotation", this.annotation);
+      }
+
+      if (this.isContainer) {
+        this.appendChild(div);
+      } else {
+        body.appendChild(div);
+      }
+
+      body.appendChild(script);
+    }
+  });
+  </script>
+
+</polymer-element>

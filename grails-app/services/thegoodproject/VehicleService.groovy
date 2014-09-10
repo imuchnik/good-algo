@@ -15,7 +15,7 @@ class VehicleService {
         wildCardTrie = new WildCardTrie();
         cars = new HashMap();
         def csvc = new File( 'grails-app/conf/vsn_data.csv' ).getText()
-        def slurper = new CsvSlurper()
+        def slurper = new CsvParser()
         parsedFile = slurper.parseText(csvc,true)
         //Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
         parsedFile.each { fields ->

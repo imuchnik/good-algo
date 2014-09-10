@@ -1,0 +1,16 @@
+{
+  "name": "gplus-button",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.2.3"
+  },
+  "homepage": "https://github.com/robdodson/gplus-button",
+  "_release": "fce7b2f6df",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fce7b2f6dfedde69d8b51628fde96b0a4831cab1"
+  },
+  "_source": "git://github.com/robdodson/gplus-button.git",
+  "_target": "master",
+  "_originalSource": "robdodson/gplus-button"
+}

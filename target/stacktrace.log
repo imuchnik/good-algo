@@ -36501,3 +36501,827 @@ groovy.lang.MissingMethodException: No signature of method: thegoodproject.VINCo
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
+2014-07-06 01:45:10,111 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:97)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1076)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:950)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.Closure.call(Closure.java:415)
+	at groovy.lang.Closure.call(Closure.java:409)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsBootstrapClass.callInit(DefaultGrailsBootstrapClass.java:60)
+	at org.codehaus.groovy.grails.web.context.GrailsConfigUtils.executeGrailsBootstraps(GrailsConfigUtils.java:74)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:108)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:55)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:51)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at thegoodproject.VehicleService$$FastClassByCGLIB$$a96953ac.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:191)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:689)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:622)
+	at thegoodproject.VehicleService$$EnhancerByCGLIB$$a4e8fcc0.initialize(<generated>)
+	at thegoodproject.VehicleService$initialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1243)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	... 25 more
+2014-07-06 01:45:10,135 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:55)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:51)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at thegoodproject.VehicleService$$FastClassByCGLIB$$a96953ac.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:191)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:689)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:622)
+	at thegoodproject.VehicleService$$EnhancerByCGLIB$$a4e8fcc0.initialize(<generated>)
+	at thegoodproject.VehicleService$initialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1243)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1076)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:950)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.Closure.call(Closure.java:415)
+	at groovy.lang.Closure.call(Closure.java:409)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsBootstrapClass.callInit(DefaultGrailsBootstrapClass.java:60)
+	at org.codehaus.groovy.grails.web.context.GrailsConfigUtils.executeGrailsBootstraps(GrailsConfigUtils.java:74)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:108)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2014-07-06 01:45:10,141 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	... 7 more
+2014-07-06 01:45:10,156 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	... 7 more
+2014-07-06 01:45:10,166 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2014-07-06 01:45:10,167 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	... 7 more
+2014-07-06 01:45:10,170 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	... 7 more
+2014-07-06 01:45:10,171 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2014-07-06 01:45:10,172 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:308)
+	at grails.util.Environment.executeForEnvironment(Environment.java:301)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:277)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.lang.MissingMethodException: No signature of method: thegoodproject.CsvSlurper.parseText() is applicable for argument types: (java.lang.String, java.lang.Boolean) values: [Serial Number Pattern,Vehicle Trim Id,Year,Make,Model,Trim Name
+XXRC*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+XZTE*V******,253913,2013,Volkswagen,GTI,"2-Door Autobahn, DSG"
+WYTE*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+WWRC*V******,253911,2013,Volkswagen,GTI,"2-Door Autobahn, Manual"
+XZTE*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+XXRC*V******,253901,2013,Volkswagen,GTI,2-Door DSG
+WWRC*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WYTE*V******,253899,2013,Volkswagen,GTI,2-Door Manual
+WWRC*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+XZTE*V******,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V****3*,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V*12***,253905,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, DSG"
+XXRC*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+XZTE*V******,253909,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, DSG"
+WWRC*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+WYTE*V******,253907,2013,Volkswagen,GTI,"2-Door with Sunroof and Navigation, Manual"
+ZZRC*V***4**,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+ZJTE*V******,253929,2013,Volkswagen,GTI,"4-Door Autobahn, DSG"
+YYRC*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+YGTE*V******,253927,2013,Volkswagen,GTI,"4-Door Autobahn, Manual"
+ZJTE*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+ZZRC*V******,253917,2013,Volkswagen,GTI,"4-Door, DSG"
+YGTE*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+YYRC*V******,253915,2013,Volkswagen,GTI,4-Door Manual
+ZJTE*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+ZZRC*V******,253921,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, DSG"
+WYTE*V******,253903,2013,Volkswagen,GTI,"2-Door with Convenience and Sunroof, Manual"
+YGTE*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+YYRC*V******,253919,2013,Volkswagen,GTI,"4-Door with Convenience and Sunroof, Manual"
+ZJTE*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZZRC*V******,253925,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, DSG"
+ZJTE*V000000,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YGTE*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+YYRC*V******,253923,2013,Volkswagen,GTI,"4-Door with Sunroof and Navigation, Manual"
+ZJTE*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+ZZRC*V******,259175,2013,Volkswagen,GTI,"Driver's Edition, DSG"
+YGTE*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+YYRC*V******,259173,2013,Volkswagen,GTI,"Driver's Edition, Manual"
+ZZRC*V***44*,258328,2013,Volkswagen,GTI,"Wolfsburg Edition, DSG"
+ZZRC*V******,258326,2013,Volkswagen,GTI,"Wolfsburg Edition, Manual"
+, ...]
+Possible solutions: parse(java.io.Reader, boolean)
+	at thegoodproject.VehicleService.initialize(VehicleService.groovy:19)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:7)
+	... 7 more
